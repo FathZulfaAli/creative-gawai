@@ -13,6 +13,7 @@ export default function Home() {
           h={"1000px"}
           bgColor={"blue"}
           borderInlineEndRadius={"100%"}
+          overflowX={"100px"}
         ></Box>
       </Center>
     </Providers>
