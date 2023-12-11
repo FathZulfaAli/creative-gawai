@@ -1,40 +1,69 @@
 /** @format */
 
-import {
-  Box,
-  Container,
-  HStack,
-  Heading,
-  Spacer,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Container, HStack, Spacer, Text } from "@chakra-ui/react";
 import Link from "next/link";
-import { Poppins } from "next/font/google";
-
-const poppinFont = Poppins({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+import logo from "../assets/logo.png";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <Box m={"0px"} pos={"sticky"}>
-      <Container bgColor={"black"} maxW={"100vw"}>
-        <HStack className={poppinFont.className} pt={"20px"} pl={"5%"}>
-          <HStack gap={"0px"}>
-            <Text as={"b"} fontSize={"30px"} color={"white"}>
-              Creative
-            </Text>
-            <Text fontSize={"30px"} color={"white"}>
-              Gawai
-            </Text>
-          </HStack>
+    <Box m={"0px"} as="navbar" position="sticky" top={"0"} zIndex={"100"}>
+      <Container maxW={"100vw"} bgColor={"black"}>
+        <HStack py={"10px"} pl={"5%"}>
+          <Link href={"/"}>
+            <HStack gap={"0px"}>
+              <Text color={"white"} as={"b"} fontSize={"40px"}>
+                Gotrade.
+              </Text>
+              <Image src={logo} alt="logo" width={60} height={10}></Image>
+            </HStack>
+          </Link>
           <Spacer />
-          <Container color={"white"} p={"10px"} gap={"5px"}>
-            <Link href={"/"}>Home</Link>
-            <Link href={"/about"}>About</Link>
-            <Link href={"/team"}>team</Link>
-          </Container>
+          <Link href={"/"}>
+            <Button
+              transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
+              bg="#33d49d"
+              color="white"
+              _hover={{ bg: "#32a07b" }}
+              _active={{
+                bg: "#33d49d",
+                transform: "scale(0.98)",
+                borderColor: "#33d49d",
+              }}
+            >
+              Home
+            </Button>
+          </Link>
+          <Link href={"/about"}>
+            <Button
+              transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
+              bg="#33d49d"
+              color="white"
+              _hover={{ bg: "#32a07b" }}
+              _active={{
+                bg: "#33d49d",
+                transform: "scale(0.98)",
+                borderColor: "#33d49d",
+              }}
+            >
+              About
+            </Button>
+          </Link>
+          <Link href={"/team"}>
+            <Button
+              transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
+              bg="#33d49d"
+              color="white"
+              _hover={{ bg: "#32a07b" }}
+              _active={{
+                bg: "#33d49d",
+                transform: "scale(0.98)",
+                borderColor: "#33d49d",
+              }}
+            >
+              Team
+            </Button>
+          </Link>
         </HStack>
       </Container>
     </Box>
