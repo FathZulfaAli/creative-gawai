@@ -5,8 +5,8 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 export const metadata = {
-  title: "Creative Gawai",
-  description: "Official Creative Gawai Company Profile",
+  title: "Gotrade",
+  description: "Invest in Fractional US Stocks",
 };
 
 export default function RootLayout({ children }) {
