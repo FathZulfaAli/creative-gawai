@@ -11,6 +11,7 @@ import {
   Flex,
   Grid,
   GridItem,
+  HStack,
   Heading,
   Icon,
   Image,
@@ -20,6 +21,7 @@ import {
 
 import SwiperSlider from "@/components/LogoSlider";
 import Link from "next/link";
+import HomeTab from "@/components/HomeTab";
 
 export default function Home() {
   return (
@@ -103,7 +105,7 @@ export default function Home() {
               </Text>
               <Image
                 alt={"Falicia"}
-                src="https://www.heygotrade.com/6142dcd3d8de4cf33c12909abfc787e6.svg"
+                src="https://www.heygotrade.com/static/felicia-6142dcd3d8de4cf33c12909abfc787e6.svg"
                 mt={"5px"}
                 mb={"13px"}
               />
@@ -131,10 +133,11 @@ export default function Home() {
         <SimpleGrid
           spacing={7}
           templateColumns={"repeat(auto-fill, minmax(200px, 1fr))"}
+          mt={"70px"}
         >
           <Card>
             <CardHeader>
-              <Heading fontSize={"md"}>Dapetin financial freedom</Heading>
+              <Heading fontSize={"md"}>Dapetin financial freedom 🚀</Heading>
             </CardHeader>
             <CardBody>
               <Text>
@@ -145,28 +148,32 @@ export default function Home() {
           </Card>
           <Card>
             <CardHeader>
-              <Heading fontSize={"md"}>Dapetin financial freedom</Heading>
+              <Heading fontSize={"md"}>Mulai dari Rp 15.000 💰</Heading>
             </CardHeader>
             <CardBody>
               <Text>
-                Investasi adalah cara terbaik untuk menumbuhkan kekayaan dalam
-                jangka waktu panjang.
+                Lupain beli saham harus pakai lot. Sekarang kamu bisa beli dari
+                0,00001 saham dengan minimum Rp 15.000.
               </Text>
             </CardBody>
           </Card>
           <Card>
             <CardHeader>
-              <Heading fontSize={"md"}>Dapetin financial freedom</Heading>
+              <Heading fontSize={"md"}>Investasi dengan aman 🛡️</Heading>
             </CardHeader>
             <CardBody>
               <Text>
-                Investasi adalah cara terbaik untuk menumbuhkan kekayaan dalam
-                jangka waktu panjang.
+                Gotrade dan partnernya telah diregulasi oleh Bappebti. Semua
+                trade kamu selalu dibacking sama saham asli di AS.
               </Text>
             </CardBody>
           </Card>
         </SimpleGrid>
       </Center>
+      {/* HomeTab */}
+      <HStack>
+        <HomeTab />
+      </HStack>
     </>
   );
 }

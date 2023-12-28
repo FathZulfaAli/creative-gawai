@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <Box m={"0px"} as="navbar" position="sticky" top={"0"} zIndex={"100"}>
       <Container maxW={"100vw"} bgColor={"black"}>
-        <HStack py={"10px"} pl={"5%"}>
+        <HStack py={"10px"} pl={"5%"} pr={"2%"}>
           <Link href={"/"}>
             <HStack gap={"0px"}>
               <Text color={"white"} as={"b"} fontSize={"40px"}>

@@ -3,6 +3,7 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Providers } from "./providers";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Gotrade",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Navbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
