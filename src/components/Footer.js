@@ -1,7 +1,6 @@
 /** @format */ "use client";
 
 import { Box, Flex, HStack, Icon, List, ListItem, Text } from "@chakra-ui/react";
-import logo from "../assets/footer_logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { GrInstagram } from "react-icons/gr";
@@ -32,7 +31,7 @@ export default function Footer() {
                   <Text color={"black"} as={"b"} fontSize={"40px"}>
                     Gotrade.
                   </Text>
-                  <Image src={logo} alt='logo' width={60} height={10}></Image>
+                  <Image src={"https://res.cloudinary.com/dzdrs7dkj/image/upload/v1706364934/lyk2gmdvjs8whgcxfytj.png} alt='logo' width={60} height={10}></Image>
                 </HStack>
               </Link>
             </Box>
