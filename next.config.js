@@ -5,7 +5,24 @@
 
 const nextConfig = {
   images: {
-    domains: ["www.heygotrade.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.heygotrade.com",
+      },
+      {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+      },
+      {
+        protocol: "https",
+        hostname: "downloads.intercomcdn.com",
+      },
+      {
+        protocol: "https",
+        hostname: "encrypted-tbn0.gstatic.com",
+      },
+    ],
   },
 };
 
