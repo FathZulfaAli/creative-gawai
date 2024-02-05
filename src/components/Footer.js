@@ -31,7 +31,12 @@ export default function Footer() {
                   <Text color={"black"} as={"b"} fontSize={"40px"}>
                     Gotrade.
                   </Text>
-                  <Image src={"https://res.cloudinary.com/dzdrs7dkj/image/upload/v1706364934/lyk2gmdvjs8whgcxfytj.png} alt='logo' width={60} height={10}></Image>
+                  <Image
+                    src={"https://res.cloudinary.com/dzdrs7dkj/image/upload/v1706364934/lyk2gmdvjs8whgcxfytj.png"}
+                    alt='logo'
+                    width={60}
+                    height={10}
+                  ></Image>
                 </HStack>
               </Link>
             </Box>
