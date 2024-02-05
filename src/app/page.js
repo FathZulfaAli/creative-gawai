@@ -37,8 +37,9 @@ export default function Home() {
               Gabung sama lebih dari <Text as={"b"}>600 ribu</Text> investor di Indonesia yang investasi saham AS seperti Apple, Goole & Netflix,
               hanya dengan Rp. 15,000.
             </Text>
-
-            <SwiperSlider />
+            <Box height={"54px"} mb={"20px"}>
+              <SwiperSlider />
+            </Box>
             <Button
               py={"27px"}
               px={"30px"}

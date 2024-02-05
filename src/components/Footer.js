@@ -7,6 +7,7 @@ import { GrInstagram } from "react-icons/gr";
 import { FaFacebook } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { useState } from "react";
+import logo from "../assets/logo.png";
 
 export default function Footer() {
   const [isMd, setIsMd] = useState(true);

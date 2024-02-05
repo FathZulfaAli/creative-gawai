@@ -9,13 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
-
 import { Autoplay } from "swiper/modules";
-// import logo from "../assets/logo.png";
-// import logo1 from "../assets/logo1.png";
-// import logo2 from "../assets/logo2.png";
-// import logo3 from "../assets/logo3.png";
-// import logo4 from "../assets/logo4.png";
 
 const SwiperSlider = () => {
   const logos = [
@@ -53,14 +47,7 @@ const SwiperSlider = () => {
             </Box>
           </SwiperSlide>
         ))}
-        <Box
-          top={0}
-          pos={"absolute"}
-          h="50px"
-          w={"100%"}
-          bgGradient="linear(to-l,#FFFFFF,  transparent, transparent, #FFFFFF)"
-          zIndex={999}
-        />
+        <Box top={0} pos={"absolute"} h='50px' w={"100%"} bgGradient='linear(to-l,#FFFFFF,  transparent, transparent, #FFFFFF)' zIndex={999} />
       </Swiper>
     </Box>
   );
