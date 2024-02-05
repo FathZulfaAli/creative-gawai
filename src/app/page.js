@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <Center>
         <Flex mx={"30px"} mt={"25px"}>
-          <Container m={"10px"} ml={"2%"} maxW={"50rem"}>
+          <Container m={"10px"} ml={"2%"}>
             <Heading size={"3xl"}>Diversifikasi portfoliomu,</Heading>
             <Heading size={"3xl"} mb={"20px"}>
               tumbuhin asetmu
